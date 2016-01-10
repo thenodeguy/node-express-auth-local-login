@@ -3,6 +3,7 @@
 var passport = require('passport');
 var router = require('express').Router();
 
+
 // Set the 'isLoggedIn' variable is used on the web templates.
 router.use(function(req, res, next) {
   res.locals.isLoggedIn = req.isAuthenticated();
@@ -33,24 +34,25 @@ router.get('/logout', function(req, res, next) {
   res.redirect('/');
 });
 
+
 function suppressLoggedInUsers(req, res, next) {
   if(req.user) {
-    //User is logged in. Clear any flash messages and then redirect.
+    // User is logged in. Clear any flash messages and then redirect.
     req.flash('error', null);
     res.redirect('/dashboard');
     return;
   }
-  //User is not logged in. Proceed.
+  // User is not logged in. Proceed.
   next();
 }
 
 function forceLogIn(req, res, next) {
   if(req.user) {
-    //User is logged in.
+    // User is logged in.
     next();
   }
   else {
-    //User is not logged in
+    // User is not logged in
     res.redirect('/login');
   }
 }
