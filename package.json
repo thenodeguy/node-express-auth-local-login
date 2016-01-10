@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "benjaminvickers",
   "license": "ISC",
-  "homepage": "https://github.com/benjaminvickers/node-express-auth-local#readme"
+  "homepage": "https://github.com/benjaminvickers/node-express-auth-local#readme",
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=dev node ./bin/www"
