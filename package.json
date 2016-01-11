@@ -1,6 +1,6 @@
 {
-  "name": "node-express-auth-local",
-  "description": "A basic and lean recipe for implementing HTTPS in a node express server.",
+  "name": "node-express-auth-local-login",
+  "description": "A basic and lean recipe for implementing username/password authentication in a node express server.",
   "version": "1.0.0",
   "author": "benjaminvickers",
   "license": "ISC",

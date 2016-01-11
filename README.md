@@ -1,4 +1,4 @@
-# node-express-auth-local
+# node-express-auth-local-login
 A basic and lean recipe for implementing username/password authentication in a 
 node express server.
 
