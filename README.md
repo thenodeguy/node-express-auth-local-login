@@ -1,4 +1,7 @@
 # node-express-auth-local-login
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/bjvickers/node-express-auth-local-login.svg)](https://greenkeeper.io/)
+
 A basic and lean recipe for implementing username/password authentication in a 
 node express server.
 
